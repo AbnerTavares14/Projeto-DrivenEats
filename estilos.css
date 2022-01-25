@@ -1,0 +1,27 @@
+.topbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 21px;
+    width: 414px;
+    height: 92px;
+    background-color: #CF2B2B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.topbar h1{
+    font-size: 44px;
+    font-family: 'Righteous', cursive;
+    color: #FFFFFF;
+}
+
+.topbar h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
