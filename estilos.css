@@ -98,10 +98,11 @@ nav h2{
     margin-right: 16px;
 }
 
-.prato:active{
+
+/*.prato:active{
     border: 5px solid #32B72F;
     border-radius: 9px;
-}
+}*/
 
 .prato h2{
     font-family: 'Roboto', sans-serif;
