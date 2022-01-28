@@ -1,9 +1,9 @@
-body{
-    background-color:  #E5E5E5; 
+body {
+    background-color: #E5E5E5;
     overflow-x: hidden;
 }
 
-.topbar{
+.topbar {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,24 +18,24 @@ body{
     overflow-x: hidden;
 }
 
-.topbar h1{
+.topbar h1 {
     font-size: 44px;
     font-family: 'Righteous', cursive;
     color: #FFFFFF;
 }
 
-.topbar h2{
+.topbar h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: #FFFFFF;
 }
 
-nav{
+nav {
     margin-top: 121px;
 }
 
-nav h1{
+nav h1 {
     margin-bottom: 17px;
     font-family: 'Righteous', cursive;
     font-size: 26px;
@@ -43,7 +43,7 @@ nav h1{
     margin-left: 19px;
 }
 
-nav h2{
+nav h2 {
     margin-bottom: 17px;
     font-family: 'Righteous', cursive;
     font-size: 26px;
@@ -51,7 +51,7 @@ nav h2{
     margin-left: 19px;
 }
 
-.container_pratos{
+.container_pratos {
     display: flex;
     width: 414px;
     margin: 0 auto;
@@ -61,7 +61,7 @@ nav h2{
     overflow-x: scroll;
 }
 
-.container_bebidas{
+.container_bebidas {
     display: flex;
     width: 414px;
     margin: 0 auto;
@@ -70,7 +70,7 @@ nav h2{
     overflow-x: scroll;
 }
 
-.container_sobremesas{
+.container_sobremesas {
     display: flex;
     width: 414px;
     margin: 0 auto;
@@ -80,11 +80,11 @@ nav h2{
     margin-bottom: 90px;
 }
 
-.content{
+.content {
     display: flex;
 }
 
-.prato{
+.prato {
     border-radius: 9px;
     background-color: #FFFFFF;
     display: flex;
@@ -99,12 +99,12 @@ nav h2{
 }
 
 
-/*.prato:active{
+.borda {
     border: 5px solid #32B72F;
-    border-radius: 9px;
-}*/
+    border-radius: 9px; 
+}
 
-.prato h2{
+.prato h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -113,7 +113,7 @@ nav h2{
     margin-left: -1px;
 }
 
-.prato h3{
+.prato h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -121,14 +121,26 @@ nav h2{
     margin-bottom: 3px;
 }
 
-.prato h4{
+.prato h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     margin-top: 5px;
 }
 
-.bebida{
+ion-icon{
+    width: 15.44px;
+    height: 15.44px;
+    color: #32B72F;
+}
+
+.checked{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.bebida {
     border-radius: 9px;
     background-color: #FFFFFF;
     display: flex;
@@ -142,12 +154,12 @@ nav h2{
     margin-right: 16px;
 }
 
-.bebida:active{
+.bebida:active {
     border: 5px solid #32B72F;
     border-radius: 9px;
 }
 
-.bebida h2{
+.bebida h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -156,7 +168,7 @@ nav h2{
     margin-left: -1px;
 }
 
-.bebida h3{
+.bebida h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -164,14 +176,14 @@ nav h2{
     margin-bottom: 3px;
 }
 
-.bebida h4{
+.bebida h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     margin-top: 5px;
 }
 
-.sobremesa{
+.sobremesa {
     border-radius: 9px;
     background-color: #FFFFFF;
     display: flex;
@@ -186,17 +198,17 @@ nav h2{
     margin-bottom: 20px;
 }
 
-.sobremesa img{
+.sobremesa img {
     height: 82px;
     width: 144px;
 }
 
-.sobremesa:active{
+.sobremesa:active {
     border: 5px solid #32B72F;
     border-radius: 9px;
 }
 
-.sobremesa h2{
+.sobremesa h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -205,7 +217,7 @@ nav h2{
     margin-left: -1px;
 }
 
-.sobremesa h3{
+.sobremesa h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -213,7 +225,7 @@ nav h2{
     margin-bottom: 3px;
 }
 
-.sobremesa h4{
+.sobremesa h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -221,7 +233,7 @@ nav h2{
 }
 
 
-.bottom_bar{
+.bottom_bar {
     display: flex;
     position: fixed;
     bottom: 0;
@@ -236,16 +248,16 @@ nav h2{
     box-sizing: border-box;
 }
 
-button{
+button {
     background-color: #CBCBCB;
     width: 364px;
     height: 61px;
     border-radius: 50px;
 }
 
-button p{
+button p {
     color: #FFFFFF;
     font-size: 20px;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
