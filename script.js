@@ -1,18 +1,27 @@
 let verifica1, verifica2, verifica3, verifica4; //variáveis que indicarão se existe um elemento selecionado em cada seção.
 
+
+
 //Função que seleciona os pratos
 function seleciona_prato(elemento) {
     let elemts = document.querySelectorAll(".prato");
     elemento.classList.toggle("borda");
+    elemento.classList.toggle("escondido");
     if (elemts[0] === elemento) {
         elemts[1].classList.remove("borda");
         elemts[2].classList.remove("borda");
+        elemts[1].classList.remove("escondido");
+        elemts[2].classList.remove("escondido");
     } else if (elemts[1] === elemento) {
         elemts[0].classList.remove("borda");
         elemts[2].classList.remove("borda");
+        elemts[0].classList.remove("escondido");
+        elemts[2].classList.remove("escondido");
     } else if (elemts[2] === elemento) {
         elemts[0].classList.remove("borda");
         elemts[1].classList.remove("borda");
+        elemts[0].classList.remove("escondido");
+        elemts[1].classList.remove("escondido");
     }
 
     for(let i = 0; i < elemts.length; i++){
@@ -32,16 +41,23 @@ function seleciona_prato(elemento) {
 function seleciona_bebida(elemento) {
     let elemts = document.querySelectorAll(".bebida");
     elemento.classList.toggle("borda");
+    elemento.classList.toggle("escondido");
     if (elemts[0] === elemento) {
         elemts[1].classList.remove("borda");
         elemts[2].classList.remove("borda");
+        elemts[1].classList.remove("escondido");
+        elemts[2].classList.remove("escondido");
     } else if (elemts[1] === elemento) {
         elemts[0].classList.remove("borda");
         elemts[2].classList.remove("borda");
+        elemts[0].classList.remove("escondido");
+        elemts[2].classList.remove("escondido");
     } else if (elemts[2] === elemento) {
         elemts[0].classList.remove("borda");
         elemts[1].classList.remove("borda");
-    } 
+        elemts[0].classList.remove("escondido");
+        elemts[1].classList.remove("escondido");
+    }
 
     for(let i = 0; i < elemts.length; i++){
         if(elemts[i].classList.contains("borda")){
@@ -60,15 +76,22 @@ function seleciona_bebida(elemento) {
 function seleciona_sobremesa(elemento) {
     let elemts = document.querySelectorAll(".sobremesa");
     elemento.classList.toggle("borda");
+    elemento.classList.toggle("escondido");
     if (elemts[0] === elemento) {
         elemts[1].classList.remove("borda");
         elemts[2].classList.remove("borda");
+        elemts[1].classList.remove("escondido");
+        elemts[2].classList.remove("escondido");
     } else if (elemts[1] === elemento) {
         elemts[0].classList.remove("borda");
         elemts[2].classList.remove("borda");
+        elemts[0].classList.remove("escondido");
+        elemts[2].classList.remove("escondido");
     } else if (elemts[2] === elemento) {
         elemts[0].classList.remove("borda");
         elemts[1].classList.remove("borda");
+        elemts[0].classList.remove("escondido");
+        elemts[1].classList.remove("escondido");
     }
 
     for(let i = 0; i < elemts.length; i++){
@@ -113,12 +136,27 @@ function verificacao(){
 
 }
 
+function confirmacao(){
+    let elemento = document.querySelector(".acontece");
+    if(verificacao){
+        elemento.classList.remove("esconde");
 
+    }
+}
+
+//Envia uma mensagem para o Whatsapp confirmando o pedido
 function confirmar(){
     let numberObj = 27.70;
-    let mensagem = "Olá, gostaria de fazer o pedido:\n- Prato: Frango Yin Yang\n- Bebida: Coquinha Gelada\n- Sobremesa: Pudim\nTotal: R$" + numberObj.toFixed(2);
+    let nome = prompt("Qual é o seu nome?");
+    let endereco = prompt("Informe seu endereço");
+    let mensagem = "Olá, gostaria de fazer o pedido:\n- Prato: Frango Yin Yang\n- Bebida: Coquinha Gelada\n- Sobremesa: Pudim\nTotal: R$" + numberObj.toFixed(2) + "\n\nNome: "+ nome + "\nEndereço: " + endereco;
     if(verificacao()){
         mensagem = window.encodeURIComponent(mensagem);
-        window.open("https://wa.me/556692180507" + "?text=" + mensagem, "_blank");
+        window.open("https://wa.me/556692086386" + "?text=" + mensagem, "_blank");
     }
+}
+
+function cancela(){
+    let elemento = document.querySelector(".acontece");
+    elemento.classList.add("esconde");
 }

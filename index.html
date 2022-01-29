@@ -32,7 +32,7 @@
                     <h3>Um pouco de batata,</h3>
                     <h3>um pouco de salada</h3>
                     <h4>R$ 14,90</h4>
-                    <div class="checked"><ion-icon name="checkmark-circle"></ion-icon></div>
+                    <div class="checked escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
                 </div>
                 <div class="prato" onclick="seleciona_prato(this)" data-identifier = "dishes">
                     <img src="frango_yin_yang 1.png" />
@@ -40,7 +40,7 @@
                     <h3>Um pouco de batata,</h3>
                     <h3>um pouco de salada</h3>
                     <h4>R$ 14,90</h4>
-                    <div class="checked"><ion-icon name="checkmark-circle"></ion-icon></div>
+                    <div class="checked escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
                 </div>
                 <div class="prato" onclick="seleciona_prato(this)" data-identifier = "dishes">
                     <img src="frango_yin_yang 1.png" />
@@ -48,7 +48,7 @@
                     <h3>Um pouco de batata,</h3>
                     <h3>um pouco de salada</h3>
                     <h4>R$ 14,90</h4>
-                    <div class="checked"><ion-icon name="checkmark-circle"></ion-icon></div>
+                    <div class="checked escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
                 </div>
             </div>
         </div>
@@ -60,21 +60,21 @@
                     <h2>Coquinha gelada</h2>
                     <h3>Lata 350ml</h3>
                     <h4>R$ 4,90</h4>
-                    <div class="checked"><ion-icon name="checkmark-circle"></ion-icon></div>
+                    <div class="checked escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
                 </div>
                 <div class="bebida" onclick="seleciona_bebida(this)"  data-identifier = "drinks">
                     <img src="coquinha_gelada 1.png" />
                     <h2>Coquinha gelada</h2>
                     <h3>Lata 350ml</h3>
                     <h4>R$ 4,90</h4>
-                    <div class="checked"><ion-icon name="checkmark-circle"></ion-icon></div>
+                    <div class="checked escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
                 </div>
                 <div class="bebida" onclick="seleciona_bebida(this)"  data-identifier = "drinks">
                     <img src="coquinha_gelada 1.png" />
                     <h2>Coquinha gelada</h2>
                     <h3>Lata 350ml</h3>
                     <h4>R$ 4,90</h4>
-                    <div class="checked"><ion-icon name="checkmark-circle"></ion-icon></div>
+                    <div class="checked escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
                 </div>
             </div>
         </div>
@@ -86,21 +86,21 @@
                     <h2>Pudim</h2>
                     <h3>Apenas pudim</h3>
                     <h4>R$ 7,90</h4>
-                    <div class="checked"><ion-icon name="checkmark-circle"></ion-icon></div>
+                    <div class="checked escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
                 </div>
                 <div class="sobremesa" onclick="seleciona_sobremesa(this)"  data-identifier = "desserts">
                     <img src="pudim 1.png" />
                     <h2>Pudim</h2>
                     <h3>Apenas pudim</h3>
                     <h4>R$ 7,90</h4>
-                    <div class="checked"><ion-icon name="checkmark-circle"></ion-icon></div>
+                    <div class="checked escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
                 </div>
                 <div class="sobremesa" onclick="seleciona_sobremesa(this)"  data-identifier = "desserts">
                     <img src="pudim 1.png" />
                     <h2>Pudim</h2>
                     <h3>Apenas pudim</h3>
                     <h4>R$ 7,90</h4>
-                    <div class="checked"><ion-icon name="checkmark-circle"></ion-icon></div>
+                    <div class="checked escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
                 </div>
             </div>
         </div>
@@ -109,11 +109,37 @@
     <!--Barra inferior com o botão de finalizar o pedido-->
     
     <div class="bottom_bar">
-        <button id="botao" onclick="confirmar();">
+        <button id="botao" onclick="confirmacao();">
             <p class="primeiro">Selecione os 3 itens</p>
             <p class="segundo">para fechar o pedido</p>
+            </div>
         </button>
     </div>
+
+    <div class="acontece esconde">
+        <div class="txt0">
+            <h1>Confirme seu pedido</h1>
+        </div>
+        <div class="txt">
+            <p>Frango Yin Yang</p>
+            <p>14,90</p>
+        </div>
+        <div class="txt">
+            <p>Coquinha gelada</p>
+            <p>4,90</p>
+        </div>
+        <div class="txt">
+            <p>Pudim</p>
+            <p>7,90</p>
+        </div>
+        <div class="txt">
+            <h2>TOTAL</h2>
+            <h2>R$ 27,70</h2>
+        </div>
+        <button onclick="confirmar()"> <p> Tudo certo, pode pedir!</p></button>
+        <div class="txt2" onclick="cancela(this)">
+            <h3>Cancelar</h3>
+        </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script.js"></script>
 </body>
