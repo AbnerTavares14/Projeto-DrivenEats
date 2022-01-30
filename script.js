@@ -137,7 +137,7 @@ function verificacao(){
 }
 
 function confirmacao(){
-    let elemento = document.querySelector(".acontece");
+    let elemento = document.querySelector(".modal-container");
     if(verificacao){
         elemento.classList.remove("esconde");
 
@@ -157,6 +157,6 @@ function confirmar(){
 }
 
 function cancela(){
-    let elemento = document.querySelector(".acontece");
+    let elemento = document.querySelector(".modal-container");
     elemento.classList.add("esconde");
 }

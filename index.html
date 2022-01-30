@@ -16,7 +16,36 @@
 </head>
 
 <body>
-    <!---->
+    <!-- Modal -->
+    <div class="modal-container esconde">
+            <div class="acontece ">
+                <div class="txt0">
+                    <h1>Confirme seu pedido</h1>
+                </div>
+                <div class="txt">
+                    <p>Frango Yin Yang</p>
+                    <p>14,90</p>
+                </div>
+                <div class="txt">
+                    <p>Coquinha gelada</p>
+                    <p>4,90</p>
+                </div>
+                <div class="txt">
+                    <p>Pudim</p>
+                    <p>7,90</p>
+                </div>
+                <div class="txt">
+                    <h2>TOTAL</h2>
+                    <h2>R$ 27,70</h2>
+                </div>
+                <button onclick="confirmar()"> <p> Tudo certo, pode pedir!</p></button>
+                <div class="txt2" onclick="cancela(this)">
+                    <h3>Cancelar</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="topbar">
         <h1>DrivenEats</h1>
         <h2>Sua comida em 6 minutos</h2>
@@ -116,30 +145,6 @@
         </button>
     </div>
 
-    <div class="acontece esconde">
-        <div class="txt0">
-            <h1>Confirme seu pedido</h1>
-        </div>
-        <div class="txt">
-            <p>Frango Yin Yang</p>
-            <p>14,90</p>
-        </div>
-        <div class="txt">
-            <p>Coquinha gelada</p>
-            <p>4,90</p>
-        </div>
-        <div class="txt">
-            <p>Pudim</p>
-            <p>7,90</p>
-        </div>
-        <div class="txt">
-            <h2>TOTAL</h2>
-            <h2>R$ 27,70</h2>
-        </div>
-        <button onclick="confirmar()"> <p> Tudo certo, pode pedir!</p></button>
-        <div class="txt2" onclick="cancela(this)">
-            <h3>Cancelar</h3>
-        </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script.js"></script>
 </body>

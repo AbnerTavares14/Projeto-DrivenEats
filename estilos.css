@@ -288,11 +288,11 @@ button p {
     z-index: 3;
 }
 
-.txt0{
+.txt0 {
     width: 100%;
-    height: 27px; 
+    height: 27px;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
 }
 
 .txt0 h1 {
@@ -309,31 +309,31 @@ button p {
     font-size: 22px;
 }
 
-.txt{
+.txt {
     display: flex;
     justify-content: space-between;
     padding: 13px 10px;
 }
 
-.txt h2{
+.txt h2 {
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 22px;
 }
 
-.acontece button{
+.acontece button {
     background-color: #FFFFFF;
     width: 333px;
     height: 52px;
     margin-left: 10px;
 }
 
-.acontece button p{
+.acontece button p {
     color: #50D074;
 }
 
-.txt2{
+.txt2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -342,13 +342,22 @@ button p {
     padding: 10px;
 }
 
-.txt2 h3{
+.txt2 h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 20px;
     color: #FFFFFF;
 }
 
-.esconde{
+.esconde {
     display: none;
+}
+
+.modal-container {
+    position: absolute;
+    top: 0;
+    background: rgba(255, 255, 255, 0.92);
+    width: 115vw;
+    height: 140vh;
+    z-index: 500;
 }
