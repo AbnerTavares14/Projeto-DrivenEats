@@ -1,7 +1,5 @@
 let verifica1, verifica2, verifica3, verifica4; //variáveis que indicarão se existe um elemento selecionado em cada seção.
 
-
-
 //Função que seleciona os pratos
 function seleciona_prato(elemento) {
     let elemts = document.querySelectorAll(".prato");
@@ -140,7 +138,6 @@ function confirmacao(){
     let elemento = document.querySelector(".modal-container");
     if(verificacao){
         elemento.classList.remove("esconde");
-
     }
 }
 
@@ -156,6 +153,7 @@ function confirmar(){
     }
 }
 
+//Funcao responsavel por cancelar o pedido, caso o usuario clique em cancelar.
 function cancela(){
     let elemento = document.querySelector(".modal-container");
     elemento.classList.add("esconde");

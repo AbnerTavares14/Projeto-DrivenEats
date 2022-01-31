@@ -360,4 +360,4 @@ button p {
     width: 115vw;
     height: 140vh;
     z-index: 500;
-}
+} /*Estou usando a tela do meu celular como parâmetro para o funcionamento esperado dessa classe. Use o inspecionar elemento no modo mobile com altura da tela em 799 que vai ficar igual o meu.*/
